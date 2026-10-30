@@ -1,10 +1,10 @@
 {
-  "versao": "1.2.2",
+  "versao": "1.2.3",
   "resumo": [
-    "Avisos de atualização funcionando: as versões novas chegam pelo botão \"Atualizar\"",
-    "Botão \"Procurar atualizações\" nas Configurações"
+    "Função de microfone removida (painel mais simples e leve)",
+    "Extensão bem menor: o download de atualizações ficou mais rápido"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deep-1.2.2.zxp",
-  "sha256": "758391e2ce2e56a7a7a080151e53ae05791494009f6d5729ccf2546ebb6cc965",
-  "publicado_em": "2026-10-30T17:15:48.760Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deep-1.2.3.zxp",
+  "sha256": "424eab94faca24abda68d30ca2ff319c81fac6aa7196db3979623b4d12104e20",
+  "publicado_em": "2026-10-30T17:38:12.619Z"
 }
