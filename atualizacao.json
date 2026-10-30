@@ -1,11 +1,11 @@
 {
-  "versao": "1.3.1",
+  "versao": "1.3.2",
   "resumo": [
-    "O assistente agora se chama Deep",
-    "Dicas com exemplos prontos: digite /dicas ou veja ao abrir o chat",
-    "Correção: o fim das respostas longas não fica mais escondido"
+    "Rodinha de limites do plano ao lado do botão de enviar",
+    "Clique nela para ver o uso da sessão (5 horas) e da semana",
+    "Atualiza sozinha durante os pedidos, como no Claude Code"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.1.zxp",
-  "sha256": "b2a3978a5c0a5978e3176d3369feedb529608e34e2fbb6aa1a4605057f8e2667",
-  "publicado_em": "2026-10-30T19:22:47.064Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.2.zxp",
+  "sha256": "07080de3c0713da7837c7efd033c0253c0e36b009b47abe87beb95dfa115b2ca",
+  "publicado_em": "2026-10-30T19:39:56.456Z"
 }
