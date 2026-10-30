@@ -1,11 +1,10 @@
 {
-  "versao": "1.3.2",
+  "versao": "1.3.3",
   "resumo": [
-    "Rodinha de limites do plano ao lado do botão de enviar",
-    "Clique nela para ver o uso da sessão (5 horas) e da semana",
-    "Atualiza sozinha durante os pedidos, como no Claude Code"
+    "Código protegido: botão direito e \"ver código fonte\" bloqueados",
+    "A programação agora vai embaralhada no pacote, sem como ler ou copiar"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.2.zxp",
-  "sha256": "07080de3c0713da7837c7efd033c0253c0e36b009b47abe87beb95dfa115b2ca",
-  "publicado_em": "2026-10-30T19:39:56.456Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.3.zxp",
+  "sha256": "804c7f0f216e88dd6388b325ae3e6e2a4aafb07729378159ee33edf207b5e5d1",
+  "publicado_em": "2026-10-30T22:00:22.402Z"
 }
