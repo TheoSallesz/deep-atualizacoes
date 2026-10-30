@@ -1,11 +1,11 @@
 {
-  "versao": "1.3.0",
+  "versao": "1.3.1",
   "resumo": [
-    "Novo nome: Deepframe",
-    "Logo oficial, com o polvo como mascote",
-    "Visual em preto e branco mantido, agora com a identidade da marca"
+    "O assistente agora se chama Deep",
+    "Dicas com exemplos prontos: digite /dicas ou veja ao abrir o chat",
+    "Correção: o fim das respostas longas não fica mais escondido"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.0.zxp",
-  "sha256": "628abd83ab8f576db0307f093a56532af4d3b31a2c7eb398f01bd2ff73a7f7b3",
-  "publicado_em": "2026-10-30T19:17:39.854Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.1.zxp",
+  "sha256": "b2a3978a5c0a5978e3176d3369feedb529608e34e2fbb6aa1a4605057f8e2667",
+  "publicado_em": "2026-10-30T19:22:47.064Z"
 }
