@@ -1,10 +1,11 @@
 {
-  "versao": "1.2.3",
+  "versao": "1.3.0",
   "resumo": [
-    "Função de microfone removida (painel mais simples e leve)",
-    "Extensão bem menor: o download de atualizações ficou mais rápido"
+    "Novo nome: Deepframe",
+    "Logo oficial, com o polvo como mascote",
+    "Visual em preto e branco mantido, agora com a identidade da marca"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deep-1.2.3.zxp",
-  "sha256": "424eab94faca24abda68d30ca2ff319c81fac6aa7196db3979623b4d12104e20",
-  "publicado_em": "2026-10-30T17:38:12.619Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.0.zxp",
+  "sha256": "628abd83ab8f576db0307f093a56532af4d3b31a2c7eb398f01bd2ff73a7f7b3",
+  "publicado_em": "2026-10-30T19:17:39.854Z"
 }
