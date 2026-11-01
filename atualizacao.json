@@ -1,10 +1,9 @@
 {
-  "versao": "1.3.3",
+  "versao": "1.3.4",
   "resumo": [
-    "Código protegido: botão direito e \"ver código fonte\" bloqueados",
-    "A programação agora vai embaralhada no pacote, sem como ler ou copiar"
+    "Lembrete discreto de que o Deep usa os créditos da sua conta do Claude Code"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.3.zxp",
-  "sha256": "804c7f0f216e88dd6388b325ae3e6e2a4aafb07729378159ee33edf207b5e5d1",
-  "publicado_em": "2026-10-30T22:00:22.402Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.4.zxp",
+  "sha256": "d862360de7e5df8f10eb0238864307f4cdf6798a18e11b1a866a1d1e31cf3d94",
+  "publicado_em": "2026-11-01T14:43:28.614Z"
 }
