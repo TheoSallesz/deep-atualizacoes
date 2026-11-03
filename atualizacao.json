@@ -1,11 +1,12 @@
 {
-  "versao": "1.3.6",
+  "versao": "1.3.7",
   "resumo": [
-    "Agora o Deepframe pede ativação de licença (e-mail da compra + código do pedido)",
-    "Vale em até 2 computadores; dá para liberar um nas configurações",
-    "Funciona por até 3 dias sem internet"
+    "A licença agora é conferida a cada 5 minutos com o painel aberto",
+    "Se o servidor ficar fora do ar, nada trava (continua valendo a tolerância de 3 dias)",
+    "Licença indisponível: novo botão \"Trocar licença\"",
+    "O e-mail do suporte agora é copiado com um clique"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.6.zxp",
-  "sha256": "b69489832e967803c5090824567bc6c35aa35feb78767f139faa088f1f91bbd7",
-  "publicado_em": "2026-11-03T02:45:13.750Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.7.zxp",
+  "sha256": "9b82060bae9cecfa1f60d17e7b3597aab52dc1a3284ce94a0bb25368da2ec62b",
+  "publicado_em": "2026-11-03T03:39:23.391Z"
 }
