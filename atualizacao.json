@@ -1,10 +1,11 @@
 {
-  "versao": "1.3.9",
+  "versao": "1.4.0",
   "resumo": [
-    "Nova seção Suporte nas configurações",
-    "O e-mail da equipe (hello@deepframe.studio) é copiado com um clique"
+    "Agora dá para anexar vídeos curtos (até 30 s) como referência, além de imagens",
+    "O Deep analisa design, fontes e animação do vídeo e recria o estilo",
+    "Arquivos não podem mais ser arrastados para dentro do painel: use o clipe"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.3.9.zxp",
-  "sha256": "0255c3f4a98f22aa8caa37924a9238ba8386110e541899278ca05fdca76797d3",
-  "publicado_em": "2026-11-03T05:31:24.535Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.4.0.zxp",
+  "sha256": "014e8ddc00e59d5a34cbaed5a11e10ab3eb11a85694aae4114d0bce376f3d1c1",
+  "publicado_em": "2026-11-05T17:43:01.313Z"
 }
