@@ -1,11 +1,9 @@
 {
-  "versao": "1.4.0",
+  "versao": "1.4.1",
   "resumo": [
-    "Agora dá para anexar vídeos curtos (até 30 s) como referência, além de imagens",
-    "O Deep analisa design, fontes e animação do vídeo e recria o estilo",
-    "Arquivos não podem mais ser arrastados para dentro do painel: use o clipe"
+    "Novo botão Refazer, ao lado do Desfazer: devolve o que você desfez"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.4.0.zxp",
-  "sha256": "014e8ddc00e59d5a34cbaed5a11e10ab3eb11a85694aae4114d0bce376f3d1c1",
-  "publicado_em": "2026-11-05T17:43:01.313Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.4.1.zxp",
+  "sha256": "1126ee16606fdc773ab64c564991d7a32f31d707a96cfb852fb7204a52cf41e9",
+  "publicado_em": "2026-11-05T18:32:22.208Z"
 }
