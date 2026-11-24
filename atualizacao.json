@@ -1,9 +1,12 @@
 {
-  "versao": "1.4.1",
+  "versao": "1.5.4",
   "resumo": [
-    "Novo botão Refazer, ao lado do Desfazer: devolve o que você desfez"
+    "A prévia mostra exatamente as formas, cores e movimentos da sua comp",
+    "Enquanto pensa, o Deep lê seu pedido, analisa a comp com a lupa e tem a ideia",
+    "Animações mais naturais e emendadas, sem pausas",
+    "Muito mais leve: explosões, partículas e 3D rodam liso no preview"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.4.1.zxp",
-  "sha256": "1126ee16606fdc773ab64c564991d7a32f31d707a96cfb852fb7204a52cf41e9",
-  "publicado_em": "2026-11-05T18:32:22.208Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.5.4.zxp",
+  "sha256": "d9d6c22cb692421f2683f7003721f88bcb0cde6c71f5f0e7a36476cac8de773b",
+  "publicado_em": "2026-11-24T20:01:56.949Z"
 }
