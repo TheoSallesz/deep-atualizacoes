@@ -1,0 +1,5 @@
+{
+  "versao": "whisper.cpp-v1.9.6",
+  "win": { "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/motor/whisper-cli-win-x64.exe", "sha256": "f1591e146bbe434875ab02573c2857301ecdceeb21b2b2bbe1144f8d46bb10d2" },
+  "mac": { "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/motor/whisper-cli-mac-universal", "sha256": "7eb9a631438030971c23f5a0ff5412d8f25cac29730bc5775fe5bb2f4ba5a6c0" }
+}
