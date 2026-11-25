@@ -1,12 +1,12 @@
 {
-  "versao": "1.5.4",
+  "versao": "1.5.8",
   "resumo": [
-    "A prévia mostra exatamente as formas, cores e movimentos da sua comp",
-    "Enquanto pensa, o Deep lê seu pedido, analisa a comp com a lupa e tem a ideia",
-    "Animações mais naturais e emendadas, sem pausas",
-    "Muito mais leve: explosões, partículas e 3D rodam liso no preview"
+    "O Deep agora ouve o áudio da sua timeline: faz o motion de acordo com a fala ou no ritmo da música",
+    "Tudo no seu computador, sem nuvem e sem custo (o motor de fala é baixado uma vez, com sua confirmação)",
+    "Bem mais econômico: monta o motion em poucas etapas e gasta muito menos do seu plano",
+    "Sem avisos na tela enquanto ele ouve o áudio"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.5.4.zxp",
-  "sha256": "d9d6c22cb692421f2683f7003721f88bcb0cde6c71f5f0e7a36476cac8de773b",
-  "publicado_em": "2026-11-24T20:01:56.949Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.5.8.zxp",
+  "sha256": "998b361b408b29b2b6f6d1ec736d7698d28f73b9d2430aeee0dc3dc1354d7d3b",
+  "publicado_em": "2026-11-25T15:43:45.829Z"
 }
