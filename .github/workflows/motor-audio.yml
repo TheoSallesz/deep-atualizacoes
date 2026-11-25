@@ -1,0 +1,81 @@
+# Compila o motor de transcrição local (whisper.cpp oficial, versão fixa) para Windows e Mac
+# e publica em motor/ com a lista motor.json (SHA-256 que a extensão confere antes de usar).
+name: Motor de áudio (whisper.cpp)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/motor-audio.yml"]
+
+permissions:
+  contents: write
+
+env:
+  WHISPER_TAG: v1.9.6
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { repository: ggml-org/whisper.cpp, ref: "${{ env.WHISPER_TAG }}", path: whisper }
+      - name: Compilar (estático, sem DLLs, AVX2)
+        shell: bash
+        run: |
+          cd whisper
+          cmake -B build -DBUILD_SHARED_LIBS=OFF -DGGML_NATIVE=OFF -DGGML_AVX=ON -DGGML_AVX2=ON -DGGML_FMA=ON -DGGML_F16C=ON \
+            -DGGML_OPENMP=OFF -DWHISPER_BUILD_TESTS=OFF -DWHISPER_SDL2=OFF \
+            -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded -DCMAKE_POLICY_DEFAULT_CMP0091=NEW
+          cmake --build build --config Release --target whisper-cli -j 4
+          mkdir -p ../saida && cp build/bin/Release/whisper-cli.exe ../saida/whisper-cli-win-x64.exe
+      - uses: actions/upload-artifact@v4
+        with: { name: win, path: saida/whisper-cli-win-x64.exe }
+
+  mac:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+        with: { repository: ggml-org/whisper.cpp, ref: "${{ env.WHISPER_TAG }}", path: whisper }
+      - name: Compilar (universal Apple Silicon + Intel)
+        run: |
+          cd whisper
+          comum="-DBUILD_SHARED_LIBS=OFF -DGGML_NATIVE=OFF -DGGML_METAL=OFF -DWHISPER_BUILD_TESTS=OFF -DWHISPER_SDL2=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0"
+          cmake -B build-arm $comum -DCMAKE_OSX_ARCHITECTURES=arm64
+          cmake --build build-arm --target whisper-cli -j 4
+          cmake -B build-x86 $comum -DCMAKE_OSX_ARCHITECTURES=x86_64 -DGGML_AVX=ON -DGGML_AVX2=ON -DGGML_FMA=ON -DGGML_F16C=ON
+          cmake --build build-x86 --target whisper-cli -j 4
+          mkdir -p ../saida
+          lipo -create build-arm/bin/whisper-cli build-x86/bin/whisper-cli -output ../saida/whisper-cli-mac-universal
+          codesign --force -s - ../saida/whisper-cli-mac-universal
+          lipo -info ../saida/whisper-cli-mac-universal
+      - uses: actions/upload-artifact@v4
+        with: { name: mac, path: saida/whisper-cli-mac-universal }
+
+  publicar:
+    needs: [windows, mac]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { path: baixados }
+      - name: Publicar em motor/ com SHA-256
+        run: |
+          mkdir -p motor
+          cp baixados/win/whisper-cli-win-x64.exe motor/
+          cp baixados/mac/whisper-cli-mac-universal motor/
+          base="https://raw.githubusercontent.com/${{ github.repository }}/main/motor"
+          sw=$(sha256sum motor/whisper-cli-win-x64.exe | cut -d' ' -f1)
+          sm=$(sha256sum motor/whisper-cli-mac-universal | cut -d' ' -f1)
+          cat > motor/motor.json <<JSON
+          {
+            "versao": "whisper.cpp-${WHISPER_TAG}",
+            "win": { "url": "$base/whisper-cli-win-x64.exe", "sha256": "$sw" },
+            "mac": { "url": "$base/whisper-cli-mac-universal", "sha256": "$sm" }
+          }
+          JSON
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add motor
+          git commit -m "Motor de áudio: whisper.cpp ${WHISPER_TAG} (Windows + Mac)" || echo "sem mudanças"
+          git push
