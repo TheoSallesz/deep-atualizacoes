@@ -1,12 +1,12 @@
 {
-  "versao": "1.5.13",
+  "versao": "1.5.15",
   "resumo": [
-    "Câmera 3D mais calma: viaja devagar entre as cenas, sem tremer nem girar à toa",
-    "Bounce com inércia automático em tudo que entra e sai; textos centralizados",
-    "\"Motion explicativo\" com áudio agora vira cenas com ícones, não legenda",
-    "Gasta muito menos do seu limite e sempre revisa antes de entregar"
+    "O Deep agora pensa como diretor: planeja as cenas, a direção de arte e a câmera antes de criar",
+    "Animações profissionais por padrão (antecipação, overshoot, overlap) e câmera só com intenção",
+    "Pede as imagens reais certas (produtos, móveis, logo) em vez de desenhar tudo com formas",
+    "Paletas coerentes e legíveis, fontes do seu computador e textos bem enquadrados"
   ],
-  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.5.13.zxp",
-  "sha256": "652222b9be0faa4afabcd0e06de2b5e285923212c734321de9792ffde6da7016",
-  "publicado_em": "2026-11-26T05:01:36.090Z"
+  "url": "https://raw.githubusercontent.com/TheoSallesz/deep-atualizacoes/main/versoes/Deepframe-1.5.15.zxp",
+  "sha256": "5c2d4005205807be4b30b4b43fed4c243b851cfbc9795264b38765869c45774e",
+  "publicado_em": "2026-11-28T15:55:56.183Z"
 }
